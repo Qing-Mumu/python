@@ -1,0 +1,102 @@
+Python 3.6.5（解释器Python.exe+lib（内置库）+pip(包管理器））DAY1
+	1. Python特点
+
+
+	* 解释型、可扩展性比较高、跨平台的语言
+
+		*    编译型语言可以生成一个程序，可以脱离开发环境，在特定的平台上独立运行。但是要依赖操作系统。在哪里生成的只能在哪里用。不可跨平台。
+		*    解释型语言可以跨平台。使用解释器对源程序逐行解释成机器码。依赖解释器。
+
+DOC-文件-docmentslib-libary-库-----里面是系统已经封装好的-内置库scripts---    --pip.exe--命令+呼叫外援---增加可扩展性---不用了也可以删除pip不能在Python里运行
+	* Windows    ----》    Linux（运行）
+	* 开发                                部署
+	* 安装出现的问题：
+
+		* runtime error 缺失程序    Python  ---》原因：Windows少了补丁----》下载补丁
+		* Python报错“不是内部或外部命令”-----》检查环境变量配置是否正确-----》自行配置，寻找运行的EXE，添加到programs
+
+			* 以管理员身份运行+pip配置+scrips配置
+		* 卸了重装，Python文件夹如果未删，要想卸干静，删除安装目录。
+
+
+	1. dos 命令
+
+ 
+	* 2.1 CD-------切换目录
+
+      cd..--------切换到上层目录eg:C://users/qingyl>cd..C://users>     cd 指定的目录路径 ----------(cd+空格）后面跟上目标路径会跳到目标路径 eg:C:\Users\qingyl>CD D:\PYTHON系统找不到指定的路径。C:\Users\qingyl>d；'d；' 不是内部或外部命令，也不是可运行的程序或批处理文件。C:\Users\qingyl>D:D:\>
+	* 2.2 DIR------浏览目录
+
+dir--------显示指定路径上所有文件或目录的信息      标dir的是文件夹，不标的是文件　格式：DIR [盘符：][路径][文件名] [参数]参数：　　/W：宽屏显示，一排显示5个文件名，而不会显示修改时间，文件大小等信息;　　/P：分页显示，当屏幕无法将信息完全显示时，可使用其进行分页显示;　　/A：显示具有特殊属性的文件;　　/S：显示当前目录及其子目录下所有的文件。
+	* 2.3 mkdir 文件名----创建一个新的目录（make---->mk）mkdir 文件名------添加一个叫“文件名”的文件夹
+
+eg:mkdir test
+	* 2.4 rm-----删除（remove---》rm）
+
+rmdir 文件名------删除一个叫“文件名”的文件夹eg:E:\卿木木>rmdir testE:\卿木木>dir
+	* 2.5 ipconfig-----查看你的ip地址
+
+ipconfigeg:ipconfig
+	* 2.6 ping----测试网络连接
+
+eg:E:\卿木木>ping 10.0.106.100正在 Ping 10.0.106.100 具有 32 字节的数据:请求超时。请求超时。请求超时。请求超时。10.0.106.100 的 Ping 统计信息:    数据包: 已发送 = 4，已接收 = 0，丢失 = 4 (100% 丢失)
+	1. pip--包管理器外援
+
+
+	* 3.1 键入pip,进入pip
+
+pip -v-----------v表示版本。pip -V   --------查看版本eg:E:\卿木木>pip -Vpip 9.0.3 from c:\users\qingyl\appdata\local\programs\python\python36\lib\site-packages (python 3.6)说明【pip】是基于Python3.6的版本
+	* 3.2 pip list----显示pip的种类
+
+eg:pip install 安装新包名-------安装新包pip install  包名==版本号-------安装此版本的包，不写版本号即默认安装最新版的包pip upinstall 卸载包名-------卸载包------successfully显示后即成功卸载pip list------以列表展示出pip管理的东西
+	1. Python
+
+>python  进入Python环境，写Python程序>>>exit()      退出环境
+	1. 包管理的pip命令
+
+>pip list    列出pip管理的包有哪些>pip install 包名       (pip install redis)
+	* 默认安装的pip在lib\site-packages里
+
+>pip uninstall 包名          卸载>pip -V     查看版本>pip freeze >requirements.txt       将项目依赖的包输出到制定的requirements.txt>pip install -r requirements.txt      使用pip安装requirements.txt依赖的文件>python -m pip install --upgrade pip      升级pip 
+	1. 环境运行
+
+
+	* 终端输入
+	* Python：写Python代码
+	* Python源文件：xxx.py    扩展名为py
+
+
+	1. Python注意事项
+
+
+	* SyntaxError: invalid character in identifier-----哪一行上，语法错误，不支持中文符号
+	* NameError: name
+	* 不能用大写
+	* cmd为交互式。sublime为源文件
+
+		* 交互式：所见即所得，但无法保存，代码写的长无法维护
+
+			* 退出：exit（）
+		* 源文件：统一编辑，可以长期保存源程序，便于维护代码，若代码较长、多，可快速格式化
+
+			* 工具：sublime 、pycharm
+			* xxx.py 文件
+			* 用Python进行解释
+
+
+	* 代码执行顺序：从左到右，从上到下
+
+
+	1. 单词
+
+
+	* print（）打印
+	* defined（）定义
+	* syntaxError 语法错误
+	* NameError 名字错误
+	* invalid 无效的
+	* character 字符
+	* file 文件
+	* directory  文件夹、目录
+
+
